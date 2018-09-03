@@ -2,7 +2,7 @@
   "name": "Paste On Screen",
   "version": "0.95",
   "manifest_version": 2,
-  "description": "Show contents of the clipboard in a popup with large font. Ideal for showing URL shortener links during a class or presentation.",
+  "description": "Show contents of the clipboard in a popup with large font.",
   "permissions": [
     "clipboardRead",
     "storage"
