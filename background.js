@@ -20,6 +20,10 @@ function getContentFromClipboard() {
  * Send the value to be shown to the popup page's DOM
  */
 function sendPasteToContentScript(toBePasted) {
+    // strip prefixing http/s
+    var matched = /^https?:\/\/(.*)/.exec(toBePasted);
+    if (matched)
+        toBePasted = matched[1];
     // based on https://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
     var views = chrome.extension.getViews({
         type: "popup"
