@@ -1,0 +1,23 @@
+{
+  "name": "Paste On Screen",
+  "version": "0.9",
+  "manifest_version": 2,
+  "description": "Show contents of the clipboard in a popup with large font. Ideal for showing URL shortener links during a class or presentation.",
+  "permissions": [
+    "clipboardRead",
+    "storage"
+  ],
+  "background": {
+    "persistent": false,
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_title": "Paste On Screen",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "32": "clip32.png",
+    "64": "clip64.png",
+    "128": "clip128.png"
+  }
+}
