@@ -2,8 +2,9 @@
 
 retrieveSavedSize();
 
-var bgPage = chrome.extension.getBackgroundPage();
-bgPage.paste();
+chrome.runtime.getBackgroundPage(function(bgPage) {
+    bgPage.paste();
+});
 
 document.getElementById("inc").addEventListener("click", function () {
     var size = getFontSize();
