@@ -5,6 +5,8 @@ body {
 }
 button {
     vertical-align: top;
+    font-size: 1em;
+    font-weight: bold;
 }
 .container {
     position: relative;
