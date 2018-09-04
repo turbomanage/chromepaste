@@ -1,6 +1,6 @@
 {
   "name": "Paste On Screen",
-  "version": "1.02",
+  "version": "1.03",
   "manifest_version": 2,
   "description": "Show contents of the clipboard in a popup with large font.",
   "permissions": [
